@@ -10,7 +10,7 @@ n_letters = st.number_input("Number of letters", min_value=0,  value=3)
 n_numbers = st.number_input("Number of numbers", min_value=0, value=3)
 n_symbols = st.number_input("Number of symbols", min_value=0, value=3)
 
-if st.button("Generate Passord"):
+if st.button("Generate Password"):
     password = generate_password(n_letters,n_numbers,n_symbols)
     
     write_password_to_file(password)
